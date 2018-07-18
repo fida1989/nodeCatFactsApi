@@ -1,6 +1,8 @@
 var http = require('http');
 var fs = require('fs');
-const port = 3000;
+var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+//const port = 3000;
 var x;
 
 http.createServer(function (req, res) {  
@@ -11,6 +13,6 @@ http.createServer(function (req, res) {
     res.write(JSON.stringify(myJSON.data[x]));
     res.end(); 
   });
-}).listen(port);  
+}).listen(port,ipaddress);  
 
 console.log('Running on port '+ port);
