@@ -13,5 +13,3 @@ http.createServer(function (req, res) {
     res.end(); 
   });
 }).listen(port,ipaddress);  
-
-console.log('Running on port '+ port);
