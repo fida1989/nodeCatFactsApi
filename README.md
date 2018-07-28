@@ -1,2 +1,2 @@
 # nodeCatFactsApi
-Simple random gact facts api using node.js
+Simple random cat facts api using node.js
