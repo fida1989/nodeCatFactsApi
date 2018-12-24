@@ -1,6 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 var x;
+const PORT = process.env.PORT || 5000
 
 http.createServer(function (req, res) {  
    fs.readFile('facts.json', function(err, data) {
@@ -10,4 +11,4 @@ http.createServer(function (req, res) {
     res.write(JSON.stringify(myJSON.data[x]));
     res.end(); 
   });
-}).listen(80);  
+}).listen(PORT);  
