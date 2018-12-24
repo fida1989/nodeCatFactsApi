@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Cat facts app using nodejs",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "author": "fida",
   "license": "ISC"
 }
