@@ -10,4 +10,4 @@ http.createServer(function (req, res) {
     res.write(JSON.stringify(myJSON.data[x]));
     res.end(); 
   });
-}).listen(port,ipaddress);  
+}).listen(80);  
