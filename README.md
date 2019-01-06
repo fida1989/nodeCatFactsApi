@@ -1,2 +1,2 @@
 # nodeCatFactsApi
-Simple random cat facts api using Node.js hosted on Heroku.
+Simple random cat facts api developed using Express and Mongoose and hosted on Heroku.
