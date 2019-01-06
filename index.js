@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose');
 const app = express()
 const port = process.env.PORT || 5000
-const db = 'mongodb://fida:fida1989@cluster0-shard-00-00-zgjze.mongodb.net:27017,cluster0-shard-00-01-zgjze.mongodb.net:27017,cluster0-shard-00-02-zgjze.mongodb.net:27017/AppData?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true';
+const db = 'mongodb://catUser:catUser@cluster0-shard-00-00-zgjze.mongodb.net:27017,cluster0-shard-00-01-zgjze.mongodb.net:27017,cluster0-shard-00-02-zgjze.mongodb.net:27017/AppData?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true';
 
 mongoose.connect(db, {useNewUrlParser: true});
 
